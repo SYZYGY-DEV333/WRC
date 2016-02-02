@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+# Renders HTML5/CSS3/JavaScript
+# Created by SYZYGY-DEV333
+import os
+import sys
+
+from PyQt4.QtWebKit import QWebView
+from PyQt4.QtGui import QApplication
+from PyQt4.QtCore import QUrl
+
+# CONFIG
+load = 'Calculator.html'
+# PROGRAM
+
+app = QApplication(sys.argv)
+
+browser = QWebView()
+browser.load(QUrl(load))
+browser.show()
+
+app.exec_()
